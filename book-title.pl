@@ -1,6 +1,6 @@
 % Predicate to check if a keyword is in a title
 title_contains_keyword(Title, Keyword) :-
-    sub_string(Title, _, _, _, Keyword).
+    sub_atom(Title, _, _, _, Keyword).
 
 % Predicate to find books with a specific keyword in the title
 find_books_by_keyword(Keyword, Title) :-
